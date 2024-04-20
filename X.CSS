@@ -1,0 +1,140 @@
+body, html {
+    margin: 0 1.5cqmax;
+    padding: 0;
+    scroll-behavior: smooth;
+    padding-top: 60px; 
+    text-align: center; /* Semua teks di tengah */
+    background-image: url('famous face 103.jpg'); /* Tambahkan path ke gambar di sini */
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Menengahkan konten secara horizontal */
+    align-items: center; /* Menengahkan konten secara vertikal */
+    background-color: rgba(240, 240, 240, 0.5); /* Membuat background transparan */
+    padding: 20px 10%;
+    position: fixed; /* Membuat header tetap di atas */
+    width: 100%; /* Header memenuhi lebar layar */
+    top: 0; /* Posisi header di atas */
+    z-index: 1000; /* Pastikan header di atas elemen lain */
+    backdrop-filter: blur(5px); /* Efek blur untuk elemen di belakang header */
+}
+k
+
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Menengahkan konten secara horizontal */
+    align-items: center; /* Menengahkan konten secara vertikal */
+}
+
+#part1 {
+    flex: 0.1; /* 10% dari keseluruhan header, karena total flex-grow adalah 10 */
+}
+
+#part2, #part3, #part4 {
+    flex: 3.3; /* Masing-masing 30% dari keseluruhan header */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0; /* Menghilangkan padding default */
+    margin: 0; /* Menghilangkan margin default */
+    justify-content: center; /* Menengahkan item navigasi */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.logo svg {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+}
+
+/* Tambahkan styling tambahan sesuai kebutuhan */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Implementasi Taskbar pada Header "See Other" */
+.header-part {
+    cursor: pointer;
+    /* Styling tambahan untuk header */
+}
+
+.taskbar {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* Styling tambahan untuk taskbar */
+    display: none; /* Awalnya taskbar disembunyikan */
+}
+
+.taskbar a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* Styling tambahan untuk link */
+}
+
+.taskbar a:hover {
+    background-color: #f1f1f1;
+}
+.content {
+    margin-top: 50px;
+    padding: 20px;
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    color: white;
+}
+footer {
+    background-color: #d3d3d3; /* Warna abu-abu */
+    color: #00bfff; /* Warna biru muda */
+    font-size: 24px; /* Ukuran font 24px */
+    padding: 10px; /* Jarak dari teks ke tepi */
+    border-radius: 50%; /* Tampilan setengah lingkaran */
+}
+.section {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.judul {
+    font-size: 78px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.jj {
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
